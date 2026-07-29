@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#dfe7d6"/>
+  <rect x="120" y="110" width="960" height="580" rx="24" fill="#1c2922"/>
+  <circle cx="600" cy="380" r="130" fill="#d9ff43"/>
+  <path d="M565 305l120 75-120 75z" fill="#1c2922"/>
+  <text x="600" y="620" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#f7f6f1">AGREGA LA IMAGEN DE TU PROYECTO</text>
+</svg>

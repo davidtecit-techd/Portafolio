@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portafolio profesional de desarrollo web." />
+    <title>David | Portafolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio">D<span>.</span></a>
+      <button class="menu-button" aria-expanded="false" aria-controls="main-menu" aria-label="Abrir menú">☰</button>
+      <nav id="main-menu" class="nav" aria-label="Navegación principal">
+        <a href="#proyectos">Proyectos</a><a href="#agregar-proyecto">Agregar</a><a href="#sobre-mi">Sobre mí</a><a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="inicio" class="hero">
+        <p class="eyebrow">PORTAFOLIO · 2026</p>
+        <h1>Diseño y desarrollo<br /><em>experiencias digitales.</em></h1>
+        <p class="hero-copy">Soy David, analista IT enfocado en desarrollar sistemas robustos con apoyo IA</p>
+        <a class="button" href="#proyectos">Ver proyectos <span>↓</span></a>
+        <div class="hero-stat"><strong>01—</strong><span>Diseño con intención,<br />código con detalle.</span></div>
+      </section>
+
+      <section id="proyectos" class="section projects-section">
+        <div class="section-heading"><p class="eyebrow">TRABAJO SELECCIONADO</p><h2>Proyectos recientes</h2></div>
+        <div id="filters" class="filters" aria-label="Filtrar proyectos"></div>
+        <div id="projects-grid" class="projects-grid" aria-live="polite"></div>
+      </section>
+
+      <!--<section id="agregar-proyecto" class="section project-manager">
+        <div class="section-heading"><div><p class="eyebrow">GESTIÓN DE CONTENIDO</p><h2>Agregar proyecto</h2></div><button id="reset-projects" class="text-button" type="button">Restablecer mis proyectos</button></div>
+        <p class="manager-copy">Añade el enlace público de una imagen y un video. La imagen se muestra primero; el video se reproduce al pasar el cursor sobre la tarjeta.</p>
+        <form id="project-form" class="project-form">
+          <label>Nombre del proyecto<input name="title" required placeholder="Ej. Sistema de inventario" /></label>
+          <label>Categoría<select name="category" required><option>Sistemas</option><option>Automatizacion</option><option>IA</option></select></label>
+          <label>Año<input name="year" required inputmode="numeric" maxlength="4" placeholder="2026" /></label>
+          <label>Descripción<textarea name="description" required rows="3" placeholder="Una breve descripción del proyecto"></textarea></label>
+          <label>URL de la imagen<input name="image" type="url" required placeholder="https://.../imagen.jpg" /></label>
+          <label>URL del video<input name="video" type="url" required placeholder="https://.../demostracion.mp4" /></label>
+          <button class="button" type="submit">Guardar proyecto <span>+</span></button>
+          <p id="project-message" role="status"></p>
+        </form>
+      </section>-->
+
+      <section id="sobre-mi" class="section about">
+        <p class="eyebrow">SOBRE MÍ</p>
+        <div class="about-grid"><h2>La tecnología es mejor cuando se siente sencilla.</h2><div><p>Soy un informático que inició en redes, servidores, cableado y ciberseguridad, adquiriendo las bases del internet. Posteriormente me adentré en programación web, bases de datos y Python, área que despertó mi interés.<br>
+
+Con la integración de la Inteligencia Artificial, descubrí que no es necesario dominar cada línea de código, sino comprender y analizar los sistemas que la IA genera.<br> Esto me permitió desarrollar proyectos grandes, administrar, actualizar e integrar soluciones que optimizan negocios en áreas como datos y automatización.<br>
+
+Entiendo que la IA no reemplaza totalmente al profesional de TI: siempre se requiere conocimiento para manejar hardware y realizar análisis. <br>Sin embargo, la clave ya no es solo programar, sino saber analizar y aplicar la IA adecuadamente.<br>
+
+En este contexto, una empresa que antes necesitaba decenas de desarrolladores puede reducir su equipo a un especialista en IA, y ahí es donde aporto valor: uso la IA como herramienta poderosa para transformar ideas en soluciones reales.</p><ul><li>Automatización</li><li>Desarrollo sistemas</li><li>Integracion IA con sistemas</li></ul></div></div>
+      </section>
+
+      <section id="contacto" class="section contact">
+        <p class="eyebrow">CONTACTO</p>
+        <h2>¿Tienes una idea?<br /><em>Hablemos.</em></h2>
+        <form id="contact-form" class="contact-form">
+          <label>Nombre<input name="nombre" required placeholder="Tu nombre" /></label>
+          <label>Correo<input name="correo" type="email" required placeholder="tu@correo.com" /></label>
+          <label>Mensaje<textarea name="mensaje" required rows="4" placeholder="Cuéntame sobre tu proyecto"></textarea></label>
+          <button class="button" type="submit">Enviar mensaje <span>↗</span></button>
+          <p id="form-message" role="status"></p>
+        </form>
+      </section>
+    </main>
+    <footer><span>© <span id="year"></span> David</span><a href="#inicio">Volver arriba ↑</a></footer>
+    <script src="js/app.js"></script>
+  </body>
+</html>

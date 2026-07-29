@@ -1,0 +1,5 @@
+[
+  {"title":"Gestión Integral","category":"Sistemas","year":"2026","description":"Sistema centralizado para organizar operaciones, usuarios y reportes.","image":"assets/project-placeholder.svg","video":"","color":"#d9f99d"},
+  {"title":"Flujo Ágil","category":"Automatizacion","year":"2025","description":"Automatización de tareas repetitivas para ahorrar tiempo al equipo.","image":"assets/project-placeholder.svg","video":"","color":"#bfdbfe"},
+  {"title":"Asistente Inteligente","category":"IA","year":"2025","description":"Asistente que simplifica consultas y acelera decisiones cotidianas.","image":"assets/project-placeholder.svg","video":"","color":"#fecdd3"}
+]
