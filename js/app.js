@@ -18,16 +18,7 @@ const fallbackProjects = [
 ];
 
 
-function renderProjects(category = 'Todos') {
-  const visible = category === 'Todos' ? projects : projects.filter((project) => project.category === category);
-  grid.innerHTML = visible.map((project, index) => `
-    <article class="project-card"> <a href="${project.link}" class="project-visual" style="--project-color:${project.color}" aria-label="Ver ${project.title}"> <span>${String(index + 1).padStart(2, '0')}</span><strong>${project.title.slice(0, 1)}</strong><i>↗</i> </a>
-    <i>↗</i>
-</a>
-      </a>
-      <div class="project-meta"><div><p>${project.category} · ${project.year}</p><h3>${project.title}</h3></div><p class="project-description">${project.description}</p></div>
-    </article>`).join('');
-}
+function renderProjects(category = 'Todos') { const visible = category === 'Todos' ? projects : projects.filter((project) => project.category === category); grid.innerHTML = visible.map((project, index) => <article class="project-card"> <a href="${project.link}" class="project-visual" style="--project-color:${project.color}" aria-label="Ver ${project.title}"> <span>${String(index + 1).padStart(2, '0')}</span><strong>${project.title.slice(0, 1)}</strong><i>↗</i> </a> <div class="project-meta"><div><p>${project.category} · ${project.year}</p><h3>${project.title}</h3></div><p class="project-description">${project.description}</p></div> </article>).join(''); }
 
 function renderFilters() {
   const categories = ['Todos', ...new Set(projects.map((project) => project.category))];
