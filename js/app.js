@@ -21,19 +21,7 @@ const fallbackProjects = [
 function renderProjects(category = 'Todos') {
   const visible = category === 'Todos' ? projects : projects.filter((project) => project.category === category);
   grid.innerHTML = visible.map((project, index) => `
-    <a
-    href="${project.link}"
-    class="project-visual"
-    style="
-        --project-color:${project.color};
-        background-image:url('${project.image}');
-        background-size:cover;
-        background-position:center;
-        background-repeat:no-repeat;
-    "
-    aria-label="Ver ${project.title}">
-    <span>${String(index + 1).padStart(2, '0')}</span>
-    <strong></strong>
+    <article class="project-card"> <a href="${project.link}" class="project-visual" style="--project-color:${project.color}" aria-label="Ver ${project.title}"> <span>${String(index + 1).padStart(2, '0')}</span><strong>${project.title.slice(0, 1)}</strong><i>↗</i> </a>
     <i>↗</i>
 </a>
       </a>
